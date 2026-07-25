@@ -5,4 +5,45 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://tk-house.id.vn/cam-nang/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tk-house.id.vn/cam-nang/chi-phi-xay-nha-pho-tron-goi-2026-bang-gia-chi-tiet-theo-m2.html</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tk-house.id.vn/cam-nang/quy-trinh-xay-nha-tron-goi-chuan-6-buoc-tai-tk-house.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tk-house.id.vn/cam-nang/thu-tuc-xin-giay-phep-xay-dung-nha-o-tai-tp-hcm-moi-nhat.html</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tk-house.id.vn/cam-nang/phong-cach-kien-truc-hien-dai-dac-trung-va-cach-ap-dung-cho-nha-pho.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tk-house.id.vn/cam-nang/thiet-ke-nha-pho-1-tret-1-lung-giai-phap-cho-lo-dat-nho.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tk-house.id.vn/cam-nang/thiet-ke-phong-khach-hien-dai-trai-tim-cua-ngoi-nha.html</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
