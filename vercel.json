@@ -1,0 +1,7 @@
+{
+  "redirects": [
+    { "source": "/xay-nha-tron-goi.html", "destination": "/#services", "permanent": true },
+    { "source": "/cam-nang/quy-trinh-xay-nha-tron-goi-chuan-6-buoc-tai-tk-house.html", "destination": "/#quy-trinh", "permanent": true },
+    { "source": "/deliver5/cam-nang/quy-trinh-xay-nha-tron-goi-chuan-6-buoc-tai-tk-house.html", "destination": "/#quy-trinh", "permanent": true }
+  ]
+}

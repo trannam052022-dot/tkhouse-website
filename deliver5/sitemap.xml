@@ -11,19 +11,8 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://tk-house.id.vn/xay-nha-tron-goi.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
     <loc>https://tk-house.id.vn/cam-nang/chi-phi-xay-nha-pho-tron-goi-2026-bang-gia-chi-tiet-theo-m2.html</loc>
     <lastmod>2026-07-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tk-house.id.vn/cam-nang/quy-trinh-xay-nha-tron-goi-chuan-6-buoc-tai-tk-house.html</loc>
-    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
