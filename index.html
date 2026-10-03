@@ -4,27 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- ═══ SEO ═══ -->
-  <meta name="description" content="TK.HOUSE – Xây nhà trọn gói tại TP.HCM: từ thiết kế, xin phép xây dựng đến thi công, bàn giao. 15+ năm kinh nghiệm, 500+ công trình." />
-  <meta name="keywords" content="xây nhà trọn gói TPHCM, xây nhà trọn gói quận 3, thi công trọn gói TPHCM, công ty xây dựng quận 3, TK.HOUSE, nhà thầu xây dựng TPHCM" />
+  <meta name="description" content="TK.HOUSE – Thiết kế kiến trúc và nội thất nhà ở: phương án mặt bằng, phối cảnh 3D, hồ sơ kỹ thuật kiến trúc – kết cấu – điện nước. Chỉ nhận thiết kế, không nhận thi công." />
+  <meta name="keywords" content="thiết kế nhà phố, thiết kế biệt thự, thiết kế kiến trúc, thiết kế nội thất, hồ sơ xin phép xây dựng, TK.HOUSE" />
   <meta name="author" content="TK.HOUSE" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://tk-house.id.vn/" />
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tk-house.id.vn/" />
-  <meta property="og:title" content="TK.HOUSE – Xây Nhà Trọn Gói An Tâm Từ A Đến Z" />
-  <meta property="og:description" content="Xây nhà trọn gói tại TP.HCM: thiết kế, xin phép, thi công, bàn giao. 15+ năm kinh nghiệm, 500+ công trình hoàn thành." />
+  <meta property="og:title" content="TK.HOUSE – Thiết Kế Kiến Trúc & Nội Thất" />
+  <meta property="og:description" content="Thiết kế ngôi nhà đúng ý trước khi xây: phương án, phối cảnh 3D, hồ sơ kỹ thuật đủ để xin phép và thi công." />
   <meta property="og:image" content="https://tk-house.id.vn/og-image.jpg" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="TK.HOUSE – Xây Nhà Trọn Gói An Tâm Từ A Đến Z" />
-  <meta name="twitter:description" content="Xây nhà trọn gói tại TP.HCM: thiết kế, xin phép, thi công, bàn giao." />
-  <!-- Schema.org LocalBusiness -->
+  <meta name="twitter:title" content="TK.HOUSE – Thiết Kế Kiến Trúc & Nội Thất" />
+  <meta name="twitter:description" content="Thiết kế ngôi nhà đúng ý trước khi xây. Chỉ nhận thiết kế, không nhận thi công." />
+  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "TK.HOUSE – Thiết Kế & Xây Dựng",
+    "@type": "ProfessionalService",
+    "name": "TK.HOUSE – Thiết Kế Kiến Trúc & Nội Thất",
     "image": "https://tk-house.id.vn/logo.png",
     "url": "https://tk-house.id.vn",
     "email": "arc.tkhouse@gmail.com",
@@ -35,11 +35,9 @@
       "addressRegion": "TP. Hồ Chí Minh",
       "addressCountry": "VN"
     },
-    "geo": { "@type": "GeoCoordinates", "latitude": 10.7769, "longitude": 106.6897 },
     "openingHours": "Mo-Sa 08:00-17:30",
-    "priceRange": "$$",
     "sameAs": ["https://www.facebook.com/profile.php?id=61590112511418"],
-    "description": "Công ty thiết kế kiến trúc, nội thất và thi công xây dựng trọn gói tại TP.HCM. 15+ năm kinh nghiệm, 500+ công trình."
+    "description": "Thiết kế kiến trúc và nội thất nhà ở. Chỉ nhận thiết kế, không nhận thi công."
   }
   </script>
   <!-- ═══ Google Analytics GA4 ═══ -->
@@ -50,7 +48,7 @@
     gtag('js', new Date());
     gtag('config', 'G-1T1WJCH9X6');
   </script>
-  <title>TK.HOUSE – Xây Nhà Trọn Gói TP.HCM | Thiết Kế & Thi Công</title>
+  <title>TK.HOUSE – Thiết Kế Kiến Trúc & Nội Thất Nhà Ở</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="tailwind.css" />
@@ -244,6 +242,57 @@
     }
     .ornament::after { transform: scaleX(-1); }
   </style>
+  <style>
+    /* ── Design-only additions ── */
+    .pill-row { display:flex; flex-wrap:wrap; gap:10px 24px; }
+    .pill { display:flex; align-items:center; gap:8px; font-size:0.85rem; color:#b0a898; }
+    .pill::before { content:''; width:6px; height:6px; border-radius:50%; background:#c9a227; flex-shrink:0; }
+
+    .grid-4 { display:grid; grid-template-columns:1fr; gap:24px; }
+    @media (min-width:640px){ .grid-4 { grid-template-columns:repeat(2,1fr); } }
+    @media (min-width:1024px){ .grid-4 { grid-template-columns:repeat(4,1fr); } }
+
+    .step-num {
+      font-family:'Playfair Display',serif; font-weight:900; font-size:2.4rem; line-height:1;
+      background:linear-gradient(90deg,#c9a227,#f5d98b); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    }
+    .step-card { background:#1a1a1a; border:1px solid rgba(201,162,39,0.12); border-radius:4px; padding:28px 24px; }
+
+    .aln-box {
+      background:linear-gradient(135deg,#1a1500 0%,#2a1f00 50%,#1a1500 100%);
+      border:1px solid rgba(201,162,39,0.35); border-radius:6px; padding:32px 24px;
+    }
+    @media (min-width:768px){ .aln-box { padding:44px 48px; } }
+    .tool-links { display:grid; grid-template-columns:1fr; gap:12px; margin-top:28px; }
+    @media (min-width:768px){ .tool-links { grid-template-columns:repeat(3,1fr); } }
+    .tool-link {
+      display:block; padding:16px 18px; border:1px solid rgba(201,162,39,0.25); border-radius:4px;
+      text-decoration:none; transition:border-color .2s, background .2s;
+    }
+    .tool-link:hover { border-color:rgba(201,162,39,0.7); background:rgba(201,162,39,0.06); }
+    .tool-link b { display:block; font-family:'Barlow Condensed',sans-serif; letter-spacing:.06em; text-transform:uppercase; color:#e8c04a; font-size:.95rem; margin-bottom:4px; }
+    .tool-link span { color:#8a8078; font-size:.82rem; line-height:1.5; }
+
+    .note-line { font-size:.8rem; color:#7a7065; }
+    .note-line a { color:#c9a227; text-decoration:underline; }
+
+    /* floating buttons */
+    .float-col { position:fixed; right:20px; bottom:24px; z-index:999; display:flex; flex-direction:column; align-items:flex-end; gap:10px; }
+    .float-btn { width:52px; height:52px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; transition:transform .2s, box-shadow .2s; }
+    .float-btn:hover { transform:scale(1.1); }
+    .float-btn.facebook { background:linear-gradient(135deg,#1877f2,#0a5dc2); box-shadow:0 4px 18px rgba(24,119,242,0.4); }
+    .float-cta {
+      display:inline-flex; align-items:center; gap:8px; text-decoration:none;
+      background:linear-gradient(135deg,#c9a227,#f5d98b); color:#0f0f0f;
+      font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:.85rem; letter-spacing:.08em; text-transform:uppercase;
+      padding:13px 22px; border-radius:30px; box-shadow:0 4px 24px rgba(201,162,39,0.45);
+    }
+    @media (max-width:767px){
+      .float-col { right:12px; bottom:16px; gap:8px; }
+      .float-btn { width:46px; height:46px; }
+      .float-cta { padding:11px 16px; font-size:.78rem; }
+    }
+  </style>
 </head>
 <body>
 
@@ -251,31 +300,25 @@
 <nav id="navbar" class="w-full">
   <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
 
-    <!-- Logo -->
     <a href="#" class="flex items-center no-underline">
       <img src="logo.png" alt="TK.HOUSE Logo" style="height:52px;width:auto;object-fit:contain;" />
     </a>
 
-    <!-- Desktop Nav -->
     <div class="hidden md:flex items-center gap-8">
-      <a href="xay-nha-tron-goi.html" class="nav-link" style="color:#c9a227;">Xây Nhà Trọn Gói</a>
       <a href="#services" class="nav-link">Dịch Vụ</a>
-      <a href="#projects" class="nav-link">Dự Án</a>
-      <a href="#why" class="nav-link">Về Chúng Tôi</a>
-      <a href="#khao-sat" class="nav-link">Khảo Sát</a>
-      <a href="#pricing" class="nav-link">Báo Giá</a>
+      <a href="#projects" class="nav-link">Mẫu Thiết Kế</a>
+      <a href="#quy-trinh" class="nav-link">Quy Trình</a>
+      <a href="#phi-thiet-ke" class="nav-link">Phí Thiết Kế</a>
       <a href="cam-nang/index.html" class="nav-link">Cẩm Nang</a>
       <a href="#contact" class="nav-link">Liên Hệ</a>
     </div>
 
-    <!-- CTA -->
     <div class="hidden md:flex items-center gap-4">
-      <a href="#contact" class="btn-gold" style="padding:11px 26px;font-size:0.8rem;">
-        Tư Vấn Miễn Phí
+      <a href="https://applamnha.vn/bat-dau/?utm_source=tk-house&utm_medium=referral&utm_campaign=tkhouse_web&utm_content=nav" data-aln="nav" class="btn-gold" style="padding:11px 26px;font-size:0.8rem;">
+        Tư Vấn Thiết Kế
       </a>
     </div>
 
-    <!-- Hamburger -->
     <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
       <span class="block w-6 h-0.5 bg-white transition-all"></span>
       <span class="block w-6 h-0.5 bg-white transition-all"></span>
@@ -283,78 +326,57 @@
     </button>
   </div>
 
-  <!-- Mobile Menu -->
   <div id="mobile-menu">
-    <a href="xay-nha-tron-goi.html" style="color:#c9a227;">Xây Nhà Trọn Gói</a>
     <a href="#services">Dịch Vụ</a>
-    <a href="#projects">Dự Án</a>
-    <a href="#why">Về Chúng Tôi</a>
-    <a href="#pricing">Báo Giá</a>
+    <a href="#projects">Mẫu Thiết Kế</a>
+    <a href="#quy-trinh">Quy Trình</a>
+    <a href="#phi-thiet-ke">Phí Thiết Kế</a>
     <a href="cam-nang/index.html">Cẩm Nang</a>
     <a href="#contact">Liên Hệ</a>
-    <a href="#contact" style="color:#c9a227;background:rgba(201,162,39,0.08);">→ Tư Vấn Miễn Phí</a>
+    <a href="https://applamnha.vn/bat-dau/?utm_source=tk-house&utm_medium=referral&utm_campaign=tkhouse_web&utm_content=nav_mobile" data-aln="nav_mobile" style="color:#c9a227;background:rgba(201,162,39,0.08);">→ Tư Vấn Thiết Kế</a>
   </div>
 </nav>
 
 <!-- ════════════════════════════════ HERO ════════════════════════════════ -->
 <section class="hero-bg min-h-screen flex flex-col justify-center relative overflow-hidden">
 
-  <!-- decorative grid -->
   <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(201,162,39,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,162,39,0.04) 1px, transparent 1px); background-size: 80px 80px;"></div>
 
   <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-24">
     <div class="max-w-3xl">
 
-      <!-- eyebrow -->
       <div class="flex items-center gap-4 mb-8 fade-up">
         <span class="gold-line"></span>
-        <span class="font-condensed tracking-widest text-xs uppercase" style="color:#c9a227;">Thi Công Trọn Gói · Kiến Trúc · Nội Thất</span>
+        <span class="font-condensed tracking-widest text-xs uppercase" style="color:#c9a227;">Thiết Kế Kiến Trúc · Nội Thất</span>
       </div>
 
-      <!-- title -->
       <h1 class="hero-title text-5xl sm:text-6xl lg:text-8xl text-white mb-6 fade-up delay-1">
-        Xây Nhà Trọn Gói<br />
-        <span class="gold-text">An Tâm</span><br />
-        Từ A Đến Z
+        Thiết Kế Ngôi Nhà<br />
+        <span class="gold-text">Đúng Ý</span><br />
+        Trước Khi Xây
       </h1>
 
-      <!-- subtitle -->
-      <p class="text-lg font-light leading-relaxed mb-10 fade-up delay-2" style="color:#b0a898;max-width:520px;">
-        Từ thiết kế, xin phép xây dựng đến thi công và bàn giao chìa khóa — TK.HOUSE đồng hành trọn gói, đúng tiến độ, đúng ngân sách cam kết.
+      <p class="text-lg font-light leading-relaxed mb-10 fade-up delay-2" style="color:#b0a898;max-width:540px;">
+        TK.HOUSE chỉ làm thiết kế — phương án mặt bằng, phối cảnh 3D, hồ sơ kỹ thuật và nội thất. Bạn cầm bộ hồ sơ rõ ràng để xin phép và tự chọn đơn vị thi công.
       </p>
 
-      <!-- CTA row -->
-      <div class="flex flex-wrap gap-4 mb-16 fade-up delay-3">
-        <a href="#contact" class="btn-gold">
-          Nhận Báo Giá Ngay
+      <div class="flex flex-wrap gap-4 mb-14 fade-up delay-3">
+        <a href="https://applamnha.vn/bat-dau/?utm_source=tk-house&utm_medium=referral&utm_campaign=tkhouse_web&utm_content=hero" data-aln="hero" class="btn-gold">
+          Đặt Tư Vấn Thiết Kế
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a href="#khao-sat" class="btn-outline" style="border-color:rgba(201,162,39,0.8);color:#f5d98b;">
-          📋 Khảo Sát Nhu Cầu
-        </a>
-        <a href="#projects" class="btn-outline">Xem Công Trình</a>
+        <a href="#projects" class="btn-outline">Xem Mẫu Thiết Kế</a>
       </div>
 
-      <!-- Stats -->
-      <div class="flex flex-wrap gap-8 fade-up delay-4">
-        <div class="stat-item pl-4">
-          <p class="font-condensed font-bold text-3xl" style="color:#e8c04a;">15<span style="color:#c9a227;">+</span></p>
-          <p class="text-xs tracking-widest uppercase" style="color:#7a7065;">Năm Kinh Nghiệm</p>
-        </div>
-        <div class="stat-item pl-4">
-          <p class="font-condensed font-bold text-3xl" style="color:#e8c04a;">500<span style="color:#c9a227;">+</span></p>
-          <p class="text-xs tracking-widest uppercase" style="color:#7a7065;">Dự Án Hoàn Thành</p>
-        </div>
-        <div class="stat-item pl-4">
-          <p class="font-condensed font-bold text-3xl" style="color:#e8c04a;">98<span style="color:#c9a227;">%</span></p>
-          <p class="text-xs tracking-widest uppercase" style="color:#7a7065;">Khách Hàng Hài Lòng</p>
-        </div>
+      <div class="pill-row fade-up delay-4">
+        <span class="pill">Chỉ thiết kế — không nhận thi công</span>
+        <span class="pill">Hồ sơ đủ để xin phép &amp; thi công</span>
+        <span class="pill">Phí thiết kế báo công khai theo m²</span>
       </div>
 
     </div>
   </div>
 
-  <!-- scroll cue -->
   <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
     <span class="font-condensed text-xs tracking-widest uppercase" style="color:#c9a227;">Cuộn Xuống</span>
     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" style="animation:fadeUp 1s ease infinite alternate;"><path d="M4 7l5 5 5-5" stroke="#c9a227" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -365,19 +387,37 @@
 <section id="services" class="py-24 lg:py-32" style="background:#111111;">
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
 
-    <!-- heading -->
     <div class="text-center mb-16">
       <div class="ornament mb-5">
-        <span class="font-condensed tracking-widest text-xs uppercase" style="color:#c9a227;">Chuyên Môn Của Chúng Tôi</span>
+        <span class="font-condensed tracking-widest text-xs uppercase" style="color:#c9a227;">Chỉ Làm Thiết Kế</span>
       </div>
-      <h2 class="font-display text-4xl lg:text-5xl text-white mb-4">Dịch Vụ Chính</h2>
-      <p class="text-base" style="color:#7a7065;max-width:480px;margin:0 auto;">Ba trụ cột dịch vụ cốt lõi — từ ý tưởng đến bàn giao hoàn hảo.</p>
+      <h2 class="font-display text-4xl lg:text-5xl text-white mb-4">Dịch Vụ Thiết Kế</h2>
+      <p class="text-base" style="color:#7a7065;max-width:520px;margin:0 auto;">Từ ý tưởng đến bộ hồ sơ hoàn chỉnh — để ngôi nhà được xây đúng như đã vẽ.</p>
     </div>
 
-    <!-- cards grid -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-      <!-- Card 1 -->
+      <div class="service-card group">
+        <div class="overflow-hidden h-52">
+          <img src="images/services-kientruc.jpg" loading="lazy" alt="Phối cảnh thiết kế kiến trúc nhà ở" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="p-7">
+          <div class="service-icon mb-5">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+              <path d="M3 22L13 5L23 22" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7 22V15h12v7" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round"/>
+              <rect x="10" y="17" width="6" height="5" stroke="#c9a227" stroke-width="1.4"/>
+            </svg>
+          </div>
+          <h3 class="font-condensed font-bold text-xl tracking-wide text-white mb-3 uppercase">Thiết Kế Kiến Trúc</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color:#8a8078;">Nhà phố, nhà vườn, biệt thự. Phương án mặt bằng công năng và phối cảnh 3D, chỉnh đến khi gia đình thống nhất.</p>
+          <a href="https://applamnha.vn/bat-dau/?utm_source=tk-house&utm_medium=referral&utm_campaign=tkhouse_web&utm_content=svc_kientruc" data-aln="svc_kientruc" class="font-condensed text-sm tracking-widest uppercase flex items-center gap-2" style="color:#c9a227;">
+            Đặt Thiết Kế
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 4l3 3-3 3" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
       <div class="service-card group">
         <div class="overflow-hidden h-52">
           <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&auto=format&fit=crop" loading="lazy" alt="Thiết kế nội thất" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -392,53 +432,29 @@
             </svg>
           </div>
           <h3 class="font-condensed font-bold text-xl tracking-wide text-white mb-3 uppercase">Thiết Kế Nội Thất</h3>
-          <p class="text-sm leading-relaxed mb-5" style="color:#8a8078;">Tư vấn và thiết kế không gian sống – văn phòng – thương mại theo phong cách hiện đại, cá tính. Từng chi tiết được chăm chút tỉ mỉ.</p>
-          <a href="#contact" class="font-condensed text-sm tracking-widest uppercase flex items-center gap-2" style="color:#c9a227;">
-            Tìm Hiểu Thêm
+          <p class="text-sm leading-relaxed mb-5" style="color:#8a8078;">Bố trí không gian, chọn vật liệu và đồ rời theo phong cách và ngân sách — làm cùng lúc với kiến trúc để không phải đục sửa.</p>
+          <a href="https://applamnha.vn/noi-that-khoang-gia.html?utm_source=tk-house&utm_medium=referral&utm_campaign=tkhouse_web&utm_content=svc_noithat" data-aln="svc_noithat" class="font-condensed text-sm tracking-widest uppercase flex items-center gap-2" style="color:#c9a227;">
+            Ước Tính Chi Phí Nội Thất
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 4l3 3-3 3" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
       </div>
 
-      <!-- Card 2 -->
       <div class="service-card group">
         <div class="overflow-hidden h-52">
-          <img src="images/services-kientruc.jpg" loading="lazy" alt="Phối cảnh thiết kế kiến trúc biệt thự hiện đại" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <img src="images/project-2.jpg" loading="lazy" alt="Hồ sơ thiết kế kỹ thuật nhà phố" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
         </div>
         <div class="p-7">
           <div class="service-icon mb-5">
             <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
-              <path d="M3 22L13 5L23 22" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M7 22V15h12v7" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round"/>
-              <rect x="10" y="17" width="6" height="5" stroke="#c9a227" stroke-width="1.4"/>
+              <rect x="5" y="3" width="16" height="20" rx="1" stroke="#c9a227" stroke-width="1.6"/>
+              <path d="M9 9h8M9 13h8M9 17h5" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3 class="font-condensed font-bold text-xl tracking-wide text-white mb-3 uppercase">Thiết Kế Kiến Trúc</h3>
-          <p class="text-sm leading-relaxed mb-5" style="color:#8a8078;">Lập hồ sơ thiết kế kiến trúc nhà ở, biệt thự, tòa nhà thương mại. Tuân thủ quy chuẩn pháp lý, tối ưu công năng và thẩm mỹ.</p>
-          <a href="#contact" class="font-condensed text-sm tracking-widest uppercase flex items-center gap-2" style="color:#c9a227;">
-            Tìm Hiểu Thêm
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 4l3 3-3 3" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="service-card group">
-        <div class="overflow-hidden h-52">
-          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop" loading="lazy" alt="Thi công xây dựng" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-        </div>
-        <div class="p-7">
-          <div class="service-icon mb-5">
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
-              <path d="M4 20h18" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round"/>
-              <path d="M7 20V10l6-5 6 5v10" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-              <rect x="11" y="14" width="4" height="6" stroke="#c9a227" stroke-width="1.4"/>
-            </svg>
-          </div>
-          <h3 class="font-condensed font-bold text-xl tracking-wide text-white mb-3 uppercase">Thi Công Xây Dựng</h3>
-          <p class="text-sm leading-relaxed mb-5" style="color:#8a8078;">Tổng thầu thi công trọn gói hoặc từng hạng mục. Đội ngũ kỹ thuật chuyên nghiệp, đảm bảo tiến độ và chất lượng cam kết.</p>
-          <a href="#contact" class="font-condensed text-sm tracking-widest uppercase flex items-center gap-2" style="color:#c9a227;">
-            Tìm Hiểu Thêm
+          <h3 class="font-condensed font-bold text-xl tracking-wide text-white mb-3 uppercase">Hồ Sơ Kỹ Thuật</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color:#8a8078;">Kiến trúc, kết cấu, điện nước — đủ để xin phép xây dựng và để nhiều nhà thầu báo giá trên cùng một bộ bản vẽ.</p>
+          <a href="https://applamnha.vn/du-toan-nha.html?utm_source=tk-house&utm_medium=referral&utm_campaign=tkhouse_web&utm_content=svc_hoso" data-aln="svc_hoso" class="font-condensed text-sm tracking-widest uppercase flex items-center gap-2" style="color:#c9a227;">
+            Dự Toán Chi Phí Xây
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 4l3 3-3 3" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -454,16 +470,15 @@
 
     <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-14 gap-4">
       <div>
-        <p class="font-condensed tracking-widest text-xs uppercase mb-3" style="color:#c9a227;">Portfolio</p>
-        <h2 class="font-display text-4xl lg:text-5xl text-white">Công Trình Tiêu Biểu</h2>
+        <p class="font-condensed tracking-widest text-xs uppercase mb-3" style="color:#c9a227;">Phối Cảnh Mẫu</p>
+        <h2 class="font-display text-4xl lg:text-5xl text-white">Mẫu Thiết Kế</h2>
       </div>
-      <a href="#contact" class="btn-outline" style="white-space:nowrap;">Xem Tất Cả</a>
+      <a href="https://applamnha.vn/mau/?utm_source=tk-house&utm_medium=referral&utm_campaign=tkhouse_web&utm_content=mau" data-aln="mau" class="btn-outline" style="white-space:nowrap;">Xem Kho Mẫu</a>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
-      <!-- Project items -->
-      <div class="project-wrap relative overflow-hidden rounded cursor-pointer group">
+      <div class="project-wrap relative overflow-hidden rounded group">
         <img src="images/project-1.jpg" loading="lazy" class="project-thumb w-full" alt="Biệt Thự Hồ Bơi phong cách Tân Cổ Điển" />
         <div class="absolute inset-0 flex flex-col justify-end p-5" style="background:linear-gradient(0deg,rgba(0,0,0,0.7) 0%,transparent 60%);">
           <p class="font-condensed font-bold text-white text-base tracking-wide uppercase">Biệt Thự Hồ Bơi</p>
@@ -471,7 +486,7 @@
         </div>
       </div>
 
-      <div class="project-wrap relative overflow-hidden rounded cursor-pointer group sm:row-span-1">
+      <div class="project-wrap relative overflow-hidden rounded group sm:row-span-1">
         <img src="images/project-2.jpg" loading="lazy" class="project-thumb w-full" alt="Nhà Phố Đương Đại" />
         <div class="absolute inset-0 flex flex-col justify-end p-5" style="background:linear-gradient(0deg,rgba(0,0,0,0.7) 0%,transparent 60%);">
           <p class="font-condensed font-bold text-white text-base tracking-wide uppercase">Nhà Phố Đương Đại</p>
@@ -479,7 +494,7 @@
         </div>
       </div>
 
-      <div class="project-wrap relative overflow-hidden rounded cursor-pointer group">
+      <div class="project-wrap relative overflow-hidden rounded group">
         <img src="images/project-3.jpg" loading="lazy" class="project-thumb w-full" alt="Biệt Thự Nhà Vườn Cổ Điển" />
         <div class="absolute inset-0 flex flex-col justify-end p-5" style="background:linear-gradient(0deg,rgba(0,0,0,0.7) 0%,transparent 60%);">
           <p class="font-condensed font-bold text-white text-base tracking-wide uppercase">Biệt Thự Nhà Vườn</p>
@@ -491,498 +506,95 @@
   </div>
 </section>
 
-<!-- ════════════════════════════════ SURVEY ════════════════════════════════ -->
-<section id="khao-sat" class="py-24 lg:py-32" style="background:linear-gradient(135deg,#0f0f0f 0%,#1a1200 50%,#0f0f0f 100%);">
-  <div class="max-w-4xl mx-auto px-6 lg:px-10">
-
-    <!-- Heading -->
-    <div class="text-center mb-12">
-      <div class="ornament mb-5">
-        <span class="font-condensed tracking-widest text-xs uppercase" style="color:#c9a227;">Chỉ 2 Phút · Hoàn Toàn Miễn Phí</span>
-      </div>
-      <h2 class="font-display text-4xl lg:text-5xl text-white mb-4">Khảo Sát Nhu Cầu<br/><span style="background:linear-gradient(90deg,#c9a227,#f5d98b,#c9a227);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Xây Dựng</span></h2>
-      <p class="text-base font-light" style="color:#a09080;max-width:480px;margin:0 auto;">Trả lời 5 câu hỏi ngắn — TK.HOUSE sẽ gửi bạn <strong style="color:#e8c04a;">báo giá sơ bộ trong 1 giờ</strong> hoàn toàn miễn phí!</p>
-    </div>
-
-    <!-- Survey Card -->
-    <div id="survey-card" class="rounded-lg overflow-hidden" style="border:1px solid rgba(201,162,39,0.25);background:#1a1a1a;">
-
-      <!-- Progress bar -->
-      <div style="height:4px;background:#2a2a2a;">
-        <div id="survey-progress" style="height:100%;background:linear-gradient(90deg,#c9a227,#f5d98b);width:20%;transition:width 0.4s ease;border-radius:2px;"></div>
-      </div>
-
-      <div class="p-8 lg:p-10">
-        <!-- Step indicator -->
-        <div class="flex items-center gap-2 mb-8">
-          <span id="survey-step-label" class="font-condensed text-xs tracking-widest uppercase" style="color:#c9a227;">Câu 1 / 5</span>
-          <div class="flex gap-1.5 ml-auto">
-            <span class="survey-dot w-2 h-2 rounded-full" style="background:#c9a227;"></span>
-            <span class="survey-dot w-2 h-2 rounded-full" style="background:#333;"></span>
-            <span class="survey-dot w-2 h-2 rounded-full" style="background:#333;"></span>
-            <span class="survey-dot w-2 h-2 rounded-full" style="background:#333;"></span>
-            <span class="survey-dot w-2 h-2 rounded-full" style="background:#333;"></span>
-          </div>
-        </div>
-
-        <!-- Questions -->
-        <div id="survey-questions">
-
-          <!-- Q1 -->
-          <div class="survey-q active" data-q="1">
-            <h3 class="font-display text-2xl text-white mb-2">Diện tích đất của anh/chị?</h3>
-            <p class="text-sm mb-6" style="color:#7a7065;">Chọn khoảng diện tích phù hợp nhất</p>
-            <div class="grid grid-cols-2 gap-3">
-              <label class="survey-option"><input type="radio" name="q1" value="Dưới 50m²"/><span>📐 Dưới 50m²</span></label>
-              <label class="survey-option"><input type="radio" name="q1" value="50–100m²"/><span>📐 50 – 100m²</span></label>
-              <label class="survey-option"><input type="radio" name="q1" value="100–200m²"/><span>📐 100 – 200m²</span></label>
-              <label class="survey-option"><input type="radio" name="q1" value="Trên 200m²"/><span>📐 Trên 200m²</span></label>
-            </div>
-          </div>
-
-          <!-- Q2 -->
-          <div class="survey-q" data-q="2" style="display:none;">
-            <h3 class="font-display text-2xl text-white mb-2">Số tầng dự kiến xây dựng?</h3>
-            <p class="text-sm mb-6" style="color:#7a7065;">Bao gồm tầng trệt</p>
-            <div class="grid grid-cols-2 gap-3">
-              <label class="survey-option"><input type="radio" name="q2" value="1 tầng"/><span>🏠 1 tầng</span></label>
-              <label class="survey-option"><input type="radio" name="q2" value="2 tầng"/><span>🏠 2 tầng</span></label>
-              <label class="survey-option"><input type="radio" name="q2" value="3 tầng"/><span>🏢 3 tầng</span></label>
-              <label class="survey-option"><input type="radio" name="q2" value="4 tầng trở lên"/><span>🏢 4 tầng trở lên</span></label>
-            </div>
-          </div>
-
-          <!-- Q3 -->
-          <div class="survey-q" data-q="3" style="display:none;">
-            <h3 class="font-display text-2xl text-white mb-2">Số thành viên cùng chung sống?</h3>
-            <p class="text-sm mb-6" style="color:#7a7065;">Giúp TK.HOUSE tính toán số phòng phù hợp</p>
-            <div class="grid grid-cols-2 gap-3">
-              <label class="survey-option"><input type="radio" name="q3" value="1–2 người"/><span>👫 1 – 2 người</span></label>
-              <label class="survey-option"><input type="radio" name="q3" value="3–4 người"/><span>👨‍👩‍👧 3 – 4 người</span></label>
-              <label class="survey-option"><input type="radio" name="q3" value="5–6 người"/><span>👨‍👩‍👧‍👦 5 – 6 người</span></label>
-              <label class="survey-option"><input type="radio" name="q3" value="7 người trở lên"/><span>🏘️ 7 người trở lên</span></label>
-            </div>
-          </div>
-
-          <!-- Q4 -->
-          <div class="survey-q" data-q="4" style="display:none;">
-            <h3 class="font-display text-2xl text-white mb-2">Ngân sách dự kiến?</h3>
-            <p class="text-sm mb-6" style="color:#7a7065;">Thông tin giúp TK.HOUSE đề xuất gói phù hợp nhất</p>
-            <div class="grid grid-cols-1 gap-3">
-              <label class="survey-option"><input type="radio" name="q4" value="Dưới 1 tỷ"/><span>💰 Dưới 1 tỷ đồng</span></label>
-              <label class="survey-option"><input type="radio" name="q4" value="1–2 tỷ"/><span>💰 1 – 2 tỷ đồng</span></label>
-              <label class="survey-option"><input type="radio" name="q4" value="2–5 tỷ"/><span>💰 2 – 5 tỷ đồng</span></label>
-              <label class="survey-option"><input type="radio" name="q4" value="Trên 5 tỷ"/><span>💎 Trên 5 tỷ đồng</span></label>
-            </div>
-          </div>
-
-          <!-- Q5 -->
-          <div class="survey-q" data-q="5" style="display:none;">
-            <h3 class="font-display text-2xl text-white mb-2">Phong cách thiết kế yêu thích?</h3>
-            <p class="text-sm mb-6" style="color:#7a7065;">Chọn phong cách mà bạn thấy phù hợp</p>
-            <div class="grid grid-cols-2 gap-3">
-              <label class="survey-option"><input type="radio" name="q5" value="Hiện đại – tối giản"/><span>🔲 Hiện đại – Tối giản</span></label>
-              <label class="survey-option"><input type="radio" name="q5" value="Cổ điển – tân cổ điển"/><span>🏛️ Cổ điển – Tân cổ điển</span></label>
-              <label class="survey-option"><input type="radio" name="q5" value="Nhiệt đới – gần gũi thiên nhiên"/><span>🌿 Nhiệt đới – Thiên nhiên</span></label>
-              <label class="survey-option"><input type="radio" name="q5" value="Chưa quyết định"/><span>💭 Chưa quyết định</span></label>
-            </div>
-          </div>
-
-          <!-- Q6 – Contact -->
-          <div class="survey-q" data-q="6" style="display:none;">
-            <h3 class="font-display text-2xl text-white mb-2">Gần xong rồi! 🎉</h3>
-            <p class="text-sm mb-6" style="color:#7a7065;">Để nhận báo giá sơ bộ miễn phí, bạn cho TK.HOUSE biết thông tin liên hệ nhé</p>
-            <div class="flex flex-col gap-4">
-              <div>
-                <label class="font-condensed text-xs tracking-widest uppercase mb-2 block" style="color:#c9a227;">Họ & Tên *</label>
-                <input id="sv-name" type="text" placeholder="Nguyễn Văn A" class="w-full px-4 py-3 rounded text-sm text-white outline-none" style="background:rgba(255,255,255,0.06);border:1px solid rgba(201,162,39,0.2);font-family:'Barlow',sans-serif;" onfocus="this.style.borderColor='rgba(201,162,39,0.6)'" onblur="this.style.borderColor='rgba(201,162,39,0.2)'" />
-              </div>
-              <div>
-                <label class="font-condensed text-xs tracking-widest uppercase mb-2 block" style="color:#c9a227;">Số Điện Thoại *</label>
-                <input id="sv-phone" type="tel" placeholder="0909 xxx xxx" class="w-full px-4 py-3 rounded text-sm text-white outline-none" style="background:rgba(255,255,255,0.06);border:1px solid rgba(201,162,39,0.2);font-family:'Barlow',sans-serif;" onfocus="this.style.borderColor='rgba(201,162,39,0.6)'" onblur="this.style.borderColor='rgba(201,162,39,0.2)'" />
-              </div>
-              <p id="sv-error" class="text-xs" style="color:#e24b4a;display:none;">Vui lòng điền đầy đủ họ tên và số điện thoại.</p>
-            </div>
-          </div>
-
-        </div><!-- end survey-questions -->
-
-        <!-- Navigation buttons -->
-        <div class="flex gap-3 mt-8" id="survey-nav">
-          <button id="sv-back" onclick="surveyBack()" class="btn-outline" style="display:none;padding:12px 24px;font-size:0.8rem;">← Quay lại</button>
-          <button id="sv-next" onclick="surveyNext()" class="btn-gold ml-auto" style="padding:12px 32px;font-size:0.85rem;">
-            Tiếp theo →
-          </button>
-        </div>
-
-        <!-- Success state -->
-        <div id="survey-success" style="display:none;" class="text-center py-6">
-          <div style="font-size:3.5rem;margin-bottom:16px;">🏠✨</div>
-          <h3 class="font-display text-3xl text-white mb-3">Cảm ơn bạn!</h3>
-          <p class="text-base mb-6" style="color:#a09080;">TK.HOUSE đã nhận được thông tin. KTS của chúng tôi sẽ liên hệ bạn trong vòng <strong style="color:#e8c04a;">1 giờ</strong> làm việc!</p>
-          <div class="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="https://www.facebook.com/profile.php?id=61590112511418" target="_blank" class="btn-outline" style="font-size:0.85rem;">👍 Follow Fanpage</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ════ SURVEY STYLES + SCRIPT ════ -->
-<style>
-.survey-option {
-  display: flex; align-items: center; gap: 0;
-  cursor: pointer;
-}
-.survey-option input[type="radio"] { display: none; }
-.survey-option span {
-  width: 100%; padding: 12px 16px; border-radius: 8px;
-  border: 1.5px solid rgba(201,162,39,0.2);
-  color: #a09080; font-size: 14px; font-family: 'Barlow', sans-serif;
-  transition: all 0.2s; display: block;
-  background: rgba(255,255,255,0.03);
-}
-.survey-option input:checked + span {
-  border-color: #c9a227;
-  background: rgba(201,162,39,0.12);
-  color: #f5d98b; font-weight: 500;
-}
-.survey-option:hover span { border-color: rgba(201,162,39,0.4); color: #c9a227; }
-</style>
-
-<script>
-const surveyData = {};
-let currentQ = 1;
-const totalQ = 6;
-
-function updateSurveyUI() {
-  // Progress
-  document.getElementById('survey-progress').style.width = ((currentQ / totalQ) * 100) + '%';
-  // Step label
-  document.getElementById('survey-step-label').textContent = currentQ <= 5 ? `Câu ${currentQ} / 5` : 'Thông tin liên hệ';
-  // Dots
-  document.querySelectorAll('.survey-dot').forEach((d, i) => {
-    d.style.background = i < currentQ ? '#c9a227' : '#333';
-  });
-  // Back button
-  document.getElementById('sv-back').style.display = currentQ > 1 ? 'inline-flex' : 'none';
-  // Next button label
-  const nextBtn = document.getElementById('sv-next');
-  if (currentQ === 5) nextBtn.textContent = 'Tiếp tục →';
-  else if (currentQ === 6) nextBtn.textContent = '🎁 Nhận Báo Giá Miễn Phí';
-  else nextBtn.textContent = 'Tiếp theo →';
-}
-
-function surveyNext() {
-  if (currentQ <= 5) {
-    const selected = document.querySelector(`input[name="q${currentQ}"]:checked`);
-    if (!selected) {
-      // Shake effect
-      const qEl = document.querySelector(`.survey-q[data-q="${currentQ}"]`);
-      qEl.style.animation = 'none';
-      qEl.style.transform = 'translateX(-8px)';
-      setTimeout(() => { qEl.style.transform = 'translateX(8px)'; }, 80);
-      setTimeout(() => { qEl.style.transform = 'translateX(0)'; qEl.style.transition = 'transform 0.15s'; }, 160);
-      return;
-    }
-    surveyData[`q${currentQ}`] = selected.value;
-  }
-
-  if (currentQ === 6) {
-    // Submit
-    const name = document.getElementById('sv-name').value.trim();
-    const phone = document.getElementById('sv-phone').value.trim();
-    if (!name || !phone) {
-      document.getElementById('sv-error').style.display = 'block';
-      return;
-    }
-    surveyData.name = name;
-    surveyData.phone = phone;
-
-    // Build mailto
-    const body = encodeURIComponent(
-      '=== KHẢO SÁT NHU CẦU XÂY DỰNG ===\n\n' +
-      'Họ tên: ' + name + '\n' +
-      'Điện thoại: ' + phone + '\n\n' +
-      'Diện tích đất: ' + (surveyData.q1 || '') + '\n' +
-      'Số tầng: ' + (surveyData.q2 || '') + '\n' +
-      'Số thành viên: ' + (surveyData.q3 || '') + '\n' +
-      'Ngân sách: ' + (surveyData.q4 || '') + '\n' +
-      'Phong cách: ' + (surveyData.q5 || '') + '\n'
-    );
-    window.location.href = 'mailto:arc.tkhouse@gmail.com?subject=' + encodeURIComponent('Khảo sát nhu cầu – ' + name) + '&body=' + body;
-
-    // Show success
-    document.getElementById('survey-questions').style.display = 'none';
-    document.getElementById('survey-nav').style.display = 'none';
-    document.getElementById('survey-success').style.display = 'block';
-    document.getElementById('survey-progress').style.width = '100%';
-
-    if (typeof gtag !== 'undefined') gtag('event', 'survey_complete', { name, phone, budget: surveyData.q4 });
-    return;
-  }
-
-  // Go to next question
-  document.querySelector(`.survey-q[data-q="${currentQ}"]`).style.display = 'none';
-  currentQ++;
-  document.querySelector(`.survey-q[data-q="${currentQ}"]`).style.display = 'block';
-  updateSurveyUI();
-}
-
-function surveyBack() {
-  document.querySelector(`.survey-q[data-q="${currentQ}"]`).style.display = 'none';
-  currentQ--;
-  document.querySelector(`.survey-q[data-q="${currentQ}"]`).style.display = 'block';
-  updateSurveyUI();
-}
-
-updateSurveyUI();
-</script>
-
-<!-- ════════════════════════════════ WHY US ════════════════════════════════ -->
-<section id="why" class="py-24 lg:py-32" style="background:#141414;">
+<!-- ════════════════════════════════ PROCESS ════════════════════════════════ -->
+<section id="quy-trinh" class="py-24 lg:py-32" style="background:#141414;">
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-      <!-- Image side -->
-      <div class="relative">
-        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=900&auto=format&fit=crop" loading="lazy" alt="Đội ngũ kiến vàng" class="w-full rounded" style="filter:grayscale(15%) contrast(1.05);" />
-        <!-- badge -->
-        <div class="absolute -bottom-5 -right-5 sm:bottom-6 sm:right-6 p-5 rounded text-center" style="background:linear-gradient(135deg,#c9a227,#f5d98b);min-width:130px;">
-          <p class="font-display font-black text-4xl leading-none" style="color:#0f0f0f;">15+</p>
-          <p class="font-condensed text-xs tracking-widest uppercase font-bold mt-1" style="color:#5a3e05;">Năm Kinh<br/>Nghiệm</p>
-        </div>
-      </div>
-
-      <!-- Text side -->
-      <div>
-        <p class="font-condensed tracking-widest text-xs uppercase mb-4" style="color:#c9a227;">Tại Sao Chọn Chúng Tôi</p>
-        <h2 class="font-display text-4xl lg:text-5xl text-white mb-6 leading-tight">Uy Tín Xây Dựng<br/>Từ Chất Lượng</h2>
-        <p class="text-sm leading-relaxed mb-10" style="color:#8a8078;max-width:460px;">Chúng tôi không chỉ xây nhà — chúng tôi tạo ra những không gian đánh dấu cuộc sống của bạn. Mỗi dự án là một cam kết về tiến độ, chất lượng và sự hài lòng trọn vẹn.</p>
-
-        <div class="flex flex-col gap-5">
-          <div class="why-item pl-5">
-            <p class="font-condensed font-bold text-white text-base uppercase tracking-wide mb-1">Thiết Kế Bản Quyền</p>
-            <p class="text-sm" style="color:#7a7065;">Mỗi bản vẽ là độc bản — được thiết kế riêng theo nhu cầu và phong cách của từng khách hàng.</p>
-          </div>
-          <div class="why-item pl-5">
-            <p class="font-condensed font-bold text-white text-base uppercase tracking-wide mb-1">Cam Kết Tiến Độ</p>
-            <p class="text-sm" style="color:#7a7065;">Hợp đồng minh bạch, tiến độ thi công được theo dõi trực tuyến theo từng giai đoạn.</p>
-          </div>
-          <div class="why-item pl-5">
-            <p class="font-condensed font-bold text-white text-base uppercase tracking-wide mb-1">Bảo Hành Dài Hạn</p>
-            <p class="text-sm" style="color:#7a7065;">Bảo hành công trình lên đến 5 năm. Hỗ trợ kỹ thuật 24/7 trong suốt thời gian bảo hành.</p>
-          </div>
-          <div class="why-item pl-5">
-            <p class="font-condensed font-bold text-white text-base uppercase tracking-wide mb-1">Giá Trị Tối Ưu</p>
-            <p class="text-sm" style="color:#7a7065;">Báo giá chi tiết, không phát sinh chi phí ẩn. Vật liệu chọn lọc, thi công chuẩn kỹ thuật.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════ PRICING ════════════════════════════════ -->
-<section id="pricing" class="py-24 lg:py-32" style="background:#111111;">
-  <div class="max-w-7xl mx-auto px-6 lg:px-10">
     <div class="text-center mb-16">
       <div class="ornament mb-5">
-        <span class="font-condensed tracking-widest text-xs uppercase" style="color:#c9a227;">Minh Bạch – Rõ Ràng</span>
+        <span class="font-condensed tracking-widest text-xs uppercase" style="color:#c9a227;">Rõ Ràng Từng Bước</span>
       </div>
-      <h2 class="font-display text-4xl lg:text-5xl text-white mb-4">Bảng Báo Giá</h2>
-      <p class="text-base" style="color:#7a7065;max-width:500px;margin:0 auto;">Giá tham khảo — báo giá chính thức miễn phí sau khi khảo sát thực tế. Không phát sinh chi phí ẩn.</p>
+      <h2 class="font-display text-4xl lg:text-5xl text-white mb-4">Quy Trình Thiết Kế</h2>
+      <p class="text-base" style="color:#7a7065;max-width:520px;margin:0 auto;">Bốn bước, mỗi bước có kết quả cụ thể để gia đình xem và duyệt.</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-
-      <!-- Gói Cơ Bản -->
-      <div class="service-card p-8 flex flex-col">
-        <div class="mb-6">
-          <p class="font-condensed font-bold tracking-widest text-xs uppercase mb-3" style="color:#7a7065;">Gói Tiết Kiệm</p>
-          <h3 class="font-display text-3xl text-white mb-1">3 – 5 <span class="text-xl">triệu</span></h3>
-          <p class="text-xs" style="color:#c9a227;">/ m² · Thi công thô hoàn thiện</p>
-        </div>
-        <ul class="flex flex-col gap-3 mb-8 flex-1">
-          <li class="flex items-start gap-2 text-sm" style="color:#8a8078;">
-            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Thi công phần thô & hoàn thiện cơ bản
-          </li>
-          <li class="flex items-start gap-2 text-sm" style="color:#8a8078;">
-            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Vật liệu phổ thông thương hiệu uy tín
-          </li>
-          <li class="flex items-start gap-2 text-sm" style="color:#8a8078;">
-            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Bản vẽ kỹ thuật 2D
-          </li>
-          <li class="flex items-start gap-2 text-sm" style="color:#8a8078;">
-            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Bảo hành 2 năm
-          </li>
-          <li class="flex items-start gap-2 text-sm" style="color:#5a5248;">
-            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3l8 8M11 3l-8 8" stroke="#5a5248" stroke-width="1.4" stroke-linecap="round"/></svg>
-            Thiết kế nội thất
-          </li>
-        </ul>
-        <a href="#lien-he" class="btn-outline text-center justify-center" style="font-size:0.8rem;">Nhận Báo Giá</a>
+    <div class="grid-4">
+      <div class="step-card why-item">
+        <p class="step-num mb-4">01</p>
+        <p class="font-condensed font-bold text-white text-base uppercase tracking-wide mb-2">Thống Nhất Yêu Cầu</p>
+        <p class="text-sm leading-relaxed" style="color:#7a7065;">Gặp trao đổi về lô đất, số người ở, thói quen sinh hoạt và ngân sách — ghi lại thành phiếu yêu cầu.</p>
       </div>
-
-      <!-- Gói Tiêu Chuẩn — Featured -->
-      <div class="service-card p-8 flex flex-col" style="border-color:rgba(201,162,39,0.6);position:relative;">
-        <div class="absolute -top-3 left-1/2 -translate-x-1/2">
-          <span class="font-condensed font-bold text-xs tracking-widest uppercase px-4 py-1.5" style="background:linear-gradient(135deg,#c9a227,#f5d98b);color:#0f0f0f;border-radius:2px;">Phổ Biến Nhất</span>
-        </div>
-        <div class="mb-6">
-          <p class="font-condensed font-bold tracking-widest text-xs uppercase mb-3" style="color:#c9a227;">Gói Tiêu Chuẩn</p>
-          <h3 class="font-display text-3xl text-white mb-1">5 – 8 <span class="text-xl">triệu</span></h3>
-          <p class="text-xs" style="color:#c9a227;">/ m² · Thiết kế + Thi công trọn gói</p>
-        </div>
-        <ul class="flex flex-col gap-3 mb-8 flex-1">
-          <li class="flex items-start gap-2 text-sm" style="color:#8a8078;">
-            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Thiết kế kiến trúc + nội thất 3D
-          </li>
-          <li class="flex items-start gap-2 text-sm" style="color:#8a8078;">
-            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Thi công hoàn thiện cao cấp
-          </li>
-          <li class="flex items-start gap-2 text-sm" style="color:#8a8078;">
-            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Vật liệu thương hiệu cao cấp
-          </li>
-          <li class="flex items-start gap-2 text-sm" style="color:#8a8078;">
-            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Quản lý giám sát công trình
-          </li>
-          <li class="flex items-start gap-2 text-sm" style="color:#8a8078;">
-            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Bảo hành 3 năm + hỗ trợ 24/7
-          </li>
-        </ul>
-        <a href="#lien-he" class="btn-gold text-center justify-center" style="font-size:0.8rem;">Nhận Báo Giá</a>
+      <div class="step-card why-item">
+        <p class="step-num mb-4">02</p>
+        <p class="font-condensed font-bold text-white text-base uppercase tracking-wide mb-2">Chốt Phương Án</p>
+        <p class="text-sm leading-relaxed" style="color:#7a7065;">Mặt bằng công năng và phối cảnh 3D. Chỉnh sửa đến khi cả nhà đồng ý mới đi tiếp.</p>
       </div>
-
-      <!-- Gói Premium -->
-      <div class="service-card p-8 flex flex-col">
-        <div class="mb-6">
-          <p class="font-condensed font-bold tracking-widest text-xs uppercase mb-3" style="color:#7a7065;">Gói Premium</p>
-          <h3 class="font-display text-3xl text-white mb-1">8 – 15 <span class="text-xl">triệu</span></h3>
-          <p class="text-xs" style="color:#c9a227;">/ m² · Luxury full-option</p>
-        </div>
-        <ul class="flex flex-col gap-3 mb-8 flex-1">
-          <li class="flex items-start gap-2 text-sm" style="color:#8a8078;">
-            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Thiết kế độc quyền, bản quyền riêng
-          </li>
-          <li class="flex items-start gap-2 text-sm" style="color:#8a8078;">
-            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Vật liệu nhập khẩu cao cấp
-          </li>
-          <li class="flex items-start gap-2 text-sm" style="color:#8a8078;">
-            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Render 3D + walkthrough video
-          </li>
-          <li class="flex items-start gap-2 text-sm" style="color:#8a8078;">
-            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            KTS phụ trách riêng, theo sát 100%
-          </li>
-          <li class="flex items-start gap-2 text-sm" style="color:#8a8078;">
-            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="#c9a227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Bảo hành 5 năm – Ưu tiên tuyệt đối
-          </li>
-        </ul>
-        <a href="#lien-he" class="btn-outline text-center justify-center" style="font-size:0.8rem;">Nhận Báo Giá</a>
+      <div class="step-card why-item">
+        <p class="step-num mb-4">03</p>
+        <p class="font-condensed font-bold text-white text-base uppercase tracking-wide mb-2">Triển Khai Hồ Sơ</p>
+        <p class="text-sm leading-relaxed" style="color:#7a7065;">Hồ sơ kỹ thuật kiến trúc, kết cấu, điện nước — đủ chi tiết để xin phép và để nhà thầu báo giá.</p>
       </div>
-
+      <div class="step-card why-item">
+        <p class="step-num mb-4">04</p>
+        <p class="font-condensed font-bold text-white text-base uppercase tracking-wide mb-2">Bàn Giao Hồ Sơ</p>
+        <p class="text-sm leading-relaxed" style="color:#7a7065;">Nghiệm thu và bàn giao bộ hồ sơ thiết kế. Việc thi công do gia đình tự chọn đơn vị và ký hợp đồng riêng.</p>
+      </div>
     </div>
-    <p class="text-center text-xs" style="color:#5a5248;">* Giá trên là tham khảo, chưa bao gồm VAT. Báo giá chính xác sau khi khảo sát thực tế miễn phí.</p>
+
   </div>
 </section>
 
-<!-- ════════════════════════════════ CONTACT BANNER ════════════════════════════════ -->
-<section id="contact" class="py-20" style="background:linear-gradient(135deg,#1a1500 0%,#2a1f00 50%,#1a1500 100%);border-top:1px solid rgba(201,162,39,0.2);border-bottom:1px solid rgba(201,162,39,0.2);">
+<!-- ════════════════════════════════ DESIGN FEE → ALN ════════════════════════════════ -->
+<section id="phi-thiet-ke" class="py-24 lg:py-32" style="background:#111111;">
   <div class="max-w-6xl mx-auto px-6">
-    <div class="text-center mb-14">
-      <div class="ornament mb-6">
-        <span class="font-condensed tracking-widest text-xs uppercase" style="color:#c9a227;">Bắt Đầu Hành Trình Của Bạn</span>
-      </div>
-      <h2 class="font-display text-4xl lg:text-6xl text-white mb-4">Sẵn Sàng Xây<br/><span style="background:linear-gradient(90deg,#c9a227,#f5d98b,#c9a227);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Giấc Mơ</span> Của Bạn?</h2>
-      <p class="text-base font-light mb-8" style="color:#a09080;">Chọn cách bạn muốn bắt đầu — <strong style="color:#e8c04a;">Khảo sát nhanh</strong> để nhận báo giá sơ bộ, hoặc liên hệ trực tiếp.</p>
-      <!-- CTA tabs -->
-      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-2">
-        <a href="#khao-sat" class="btn-gold" style="font-size:0.9rem;padding:14px 36px;">
-          📋 Làm Khảo Sát Nhận Báo Giá
+    <div class="aln-box">
+      <p class="font-condensed tracking-widest text-xs uppercase mb-4" style="color:#c9a227;">Phí Thiết Kế</p>
+      <h2 class="font-display text-3xl lg:text-5xl text-white mb-4 leading-tight">Xem phí thiết kế và đặt tư vấn tại App Làm Nhà</h2>
+      <p class="text-base mb-8" style="color:#a09080;max-width:640px;">Tư vấn, báo phí và hợp đồng thiết kế được thực hiện qua <strong style="color:#e8c04a;">App Làm Nhà (applamnha.vn)</strong> — phí công khai theo m², hợp đồng chia theo từng bước thiết kế.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="https://applamnha.vn/bat-dau/?utm_source=tk-house&utm_medium=referral&utm_campaign=tkhouse_web&utm_content=fee_start" data-aln="fee_start" class="btn-gold">
+          Đặt Tư Vấn Thiết Kế
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <button onclick="document.getElementById('quick-contact-box').scrollIntoView({behavior:'smooth'})" class="btn-outline" style="font-size:0.85rem;">
-          ✉️ Hoặc để lại thông tin
-        </button>
+        <a href="https://applamnha.vn/chu-nha.html?utm_source=tk-house&utm_medium=referral&utm_campaign=tkhouse_web&utm_content=fee_table" data-aln="fee_table" class="btn-outline">Xem Phí Thiết Kế</a>
       </div>
-      <p class="text-xs" style="color:#5a5048;">⭐ 97% khách hàng chọn Khảo Sát để nhận báo giá chính xác hơn</p>
-    </div>
 
+      <div class="tool-links">
+        <a class="tool-link" href="https://applamnha.vn/du-toan-nha.html?utm_source=tk-house&utm_medium=referral&utm_campaign=tkhouse_web&utm_content=tool_dutoan" data-aln="tool_dutoan">
+          <b>Dự toán chi phí xây</b>
+          <span>Ước tính theo từng hạng mục trước khi có bản vẽ.</span>
+        </a>
+        <a class="tool-link" href="https://applamnha.vn/noi-that-khoang-gia.html?utm_source=tk-house&utm_medium=referral&utm_campaign=tkhouse_web&utm_content=tool_noithat" data-aln="tool_noithat">
+          <b>Khoảng giá nội thất</b>
+          <span>Ba mức chi phí nội thất để chuẩn bị ngân sách.</span>
+        </a>
+        <a class="tool-link" href="https://applamnha.vn/mau/?utm_source=tk-house&utm_medium=referral&utm_campaign=tkhouse_web&utm_content=tool_mau" data-aln="tool_mau">
+          <b>Kho mẫu thiết kế</b>
+          <span>Tham khảo phong cách trước buổi tư vấn.</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════ CONTACT ════════════════════════════════ -->
+<section id="contact" class="py-20" style="background:#0f0f0f;border-top:1px solid rgba(201,162,39,0.15);">
+  <div class="max-w-6xl mx-auto px-6">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
-      <!-- Form -->
-      <div id="quick-contact-box" id="lien-he" class="rounded p-8" style="background:rgba(255,255,255,0.03);border:1px solid rgba(201,162,39,0.2);">
-        <div class="flex items-center justify-between mb-6 cursor-pointer" onclick="toggleQuickForm()">
-          <h3 class="font-condensed font-bold text-xl tracking-wide text-white uppercase">Để Lại Thông Tin Nhanh</h3>
-          <span id="quick-form-arrow" style="color:#c9a227;font-size:1.2rem;transition:transform 0.3s;">▼</span>
+      <div class="flex flex-col justify-center">
+        <p class="font-condensed tracking-widest text-xs uppercase mb-4" style="color:#c9a227;">Bắt Đầu Thiết Kế</p>
+        <h2 class="font-display text-4xl lg:text-5xl text-white mb-5 leading-tight">Sẵn sàng vẽ<br/>ngôi nhà của bạn?</h2>
+        <p class="text-base mb-8" style="color:#a09080;max-width:460px;">Để lại thông tin trên App Làm Nhà, kiến trúc sư sẽ liên hệ để hẹn buổi trao đổi đầu tiên.</p>
+        <div>
+          <a href="https://applamnha.vn/bat-dau/?utm_source=tk-house&utm_medium=referral&utm_campaign=tkhouse_web&utm_content=contact" data-aln="contact" class="btn-gold">
+            Đặt Tư Vấn Thiết Kế
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </div>
-        <p class="text-xs mb-5" style="color:#7a7065;">Hoặc bạn có thể <a href="#khao-sat" style="color:#c9a227;text-decoration:underline;">làm khảo sát chi tiết hơn</a> để nhận báo giá chính xác!</p>
-        <div id="quick-form-content">
-        <div id="form-success" style="display:none;" class="text-center py-8">
-          <div class="text-5xl mb-4">✅</div>
-          <p class="font-condensed font-bold text-xl text-white mb-2">Đã nhận yêu cầu!</p>
-          <p class="text-sm" style="color:#a09080;">Chúng tôi sẽ liên hệ bạn trong vòng 2 giờ.</p>
-        </div>
-        <div id="form-body">
-          <div class="flex flex-col gap-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="font-condensed text-xs tracking-widest uppercase mb-2 block" style="color:#c9a227;">Họ & Tên *</label>
-                <input id="cf-name" type="text" placeholder="Nguyễn Văn A" class="w-full px-4 py-3 rounded text-sm text-white outline-none transition-all" style="background:rgba(255,255,255,0.06);border:1px solid rgba(201,162,39,0.2);font-family:'Barlow',sans-serif;" onfocus="this.style.borderColor='rgba(201,162,39,0.6)'" onblur="this.style.borderColor='rgba(201,162,39,0.2)'" />
-              </div>
-              <div>
-                <label class="font-condensed text-xs tracking-widest uppercase mb-2 block" style="color:#c9a227;">Số Điện Thoại *</label>
-                <input id="cf-phone" type="tel" placeholder="0909 xxx xxx" class="w-full px-4 py-3 rounded text-sm text-white outline-none transition-all" style="background:rgba(255,255,255,0.06);border:1px solid rgba(201,162,39,0.2);font-family:'Barlow',sans-serif;" onfocus="this.style.borderColor='rgba(201,162,39,0.6)'" onblur="this.style.borderColor='rgba(201,162,39,0.2)'" />
-              </div>
-            </div>
-            <div>
-              <label class="font-condensed text-xs tracking-widest uppercase mb-2 block" style="color:#c9a227;">Email</label>
-              <input id="cf-email" type="email" placeholder="email@gmail.com" class="w-full px-4 py-3 rounded text-sm text-white outline-none transition-all" style="background:rgba(255,255,255,0.06);border:1px solid rgba(201,162,39,0.2);font-family:'Barlow',sans-serif;" onfocus="this.style.borderColor='rgba(201,162,39,0.6)'" onblur="this.style.borderColor='rgba(201,162,39,0.2)'" />
-            </div>
-            <div>
-              <label class="font-condensed text-xs tracking-widest uppercase mb-2 block" style="color:#c9a227;">Dịch Vụ Quan Tâm</label>
-              <select id="cf-service" class="w-full px-4 py-3 rounded text-sm outline-none transition-all" style="background:#1a1400;border:1px solid rgba(201,162,39,0.2);color:#c9c0b0;font-family:'Barlow',sans-serif;" onfocus="this.style.borderColor='rgba(201,162,39,0.6)'" onblur="this.style.borderColor='rgba(201,162,39,0.2)'">
-                <option value="">-- Chọn dịch vụ --</option>
-                <option>Thiết kế nội thất</option>
-                <option>Thiết kế kiến trúc</option>
-                <option>Thi công trọn gói</option>
-                <option>Tư vấn phong thủy</option>
-                <option>Khác</option>
-              </select>
-            </div>
-            <div>
-              <label class="font-condensed text-xs tracking-widest uppercase mb-2 block" style="color:#c9a227;">Mô Tả Yêu Cầu</label>
-              <textarea id="cf-msg" rows="4" placeholder="Diện tích, loại công trình, ngân sách dự kiến..." class="w-full px-4 py-3 rounded text-sm text-white outline-none transition-all resize-none" style="background:rgba(255,255,255,0.06);border:1px solid rgba(201,162,39,0.2);font-family:'Barlow',sans-serif;" onfocus="this.style.borderColor='rgba(201,162,39,0.6)'" onblur="this.style.borderColor='rgba(201,162,39,0.2)'"></textarea>
-            </div>
-            <button onclick="submitForm()" class="btn-gold w-full justify-center text-center" style="font-size:0.85rem;">
-              Gửi Yêu Cầu Tư Vấn Miễn Phí
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-            <p id="form-error" class="text-xs text-center" style="color:#e24b4a;display:none;">Vui lòng điền Họ tên và Số điện thoại.</p>
-          </div>
-        </div>
-        </div><!-- end quick-form-content -->
+        <p class="note-line mt-3">Mở trang <a href="https://applamnha.vn/?utm_source=tk-house&utm_medium=referral&utm_campaign=tkhouse_web&utm_content=contact_home" data-aln="contact_home">applamnha.vn</a></p>
       </div>
 
-      <!-- Contact Info -->
       <div class="flex flex-col justify-between gap-8">
         <div>
           <h3 class="font-condensed font-bold text-xl tracking-wide text-white uppercase mb-6">Thông Tin Liên Hệ</h3>
@@ -1025,12 +637,11 @@ updateSurveyUI();
             </div>
           </div>
         </div>
-        <!-- Google Map embed placeholder -->
         <div class="rounded overflow-hidden" style="border:1px solid rgba(201,162,39,0.2);">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3!2d106.6897!3d10.7769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4a1a1a1a1a%3A0x1!2s169%20Tr%E1%BA%A7n%20V%C4%83n%20%C4%90ang%2C%20Ph%C6%B0%E1%BB%9Dng%2011%2C%20Qu%E1%BA%ADn%203%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh!5e0!3m2!1svi!2svn!4v1"
             width="100%" height="200" style="border:0;display:block;filter:grayscale(80%) contrast(1.1);"
-            allowfullscreen="" loading="lazy">
+            allowfullscreen="" loading="lazy" title="Bản đồ văn phòng TK.HOUSE">
           </iframe>
         </div>
       </div>
@@ -1045,50 +656,38 @@ updateSurveyUI();
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
 
-      <!-- Brand -->
       <div class="lg:col-span-1">
         <div class="mb-4">
           <img src="logo.png" alt="TK.HOUSE Logo" style="height:40px;width:auto;object-fit:contain;" />
         </div>
-        <p class="text-xs leading-relaxed mb-4" style="color:#5a5248;">Xây tổ ấm cho gia đình bạn — từ bản vẽ đến ngày bàn giao trọn vẹn.</p>
+        <p class="text-xs leading-relaxed mb-4" style="color:#5a5248;">Thiết kế ngôi nhà đúng ý — trước khi xây. Chỉ nhận thiết kế, không nhận thi công.</p>
         <div class="flex gap-3">
           <a href="https://www.facebook.com/profile.php?id=61590112511418" target="_blank" rel="noopener" class="w-8 h-8 flex items-center justify-center rounded border" style="border-color:rgba(201,162,39,0.2);color:#7a7065;" aria-label="Facebook TK.HOUSE">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M9 2H7a2 2 0 00-2 2v2H3v2h2v4h2V8h2l.5-2H7V4a.5.5 0 01.5-.5H9V2z"/></svg>
           </a>
-          <a href="#" class="w-8 h-8 flex items-center justify-center rounded border" style="border-color:rgba(201,162,39,0.2);color:#7a7065;" aria-label="Zalo">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="1.2"/><text x="7" y="10" text-anchor="middle" fill="currentColor" font-size="5" font-family="sans-serif" font-weight="bold">Z</text></svg>
-          </a>
-          <a href="#" class="w-8 h-8 flex items-center justify-center rounded border" style="border-color:rgba(201,162,39,0.2);color:#7a7065;" aria-label="YouTube">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1.5" y="3" width="11" height="8" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M5.5 5.5L9 7l-3.5 1.5V5.5z" fill="currentColor"/></svg>
-          </a>
         </div>
       </div>
 
-      <!-- Services -->
       <div>
         <p class="font-condensed font-bold tracking-widest text-xs uppercase mb-4" style="color:#c9a227;">Dịch Vụ</p>
         <ul class="flex flex-col gap-2">
-          <li><a href="#" class="footer-link">Thiết Kế Nội Thất</a></li>
-          <li><a href="#" class="footer-link">Thiết Kế Kiến Trúc</a></li>
-          <li><a href="xay-nha-tron-goi.html" class="footer-link">Xây Nhà Trọn Gói</a></li>
-          <li><a href="#" class="footer-link">Tư Vấn Phong Thủy</a></li>
-          <li><a href="#" class="footer-link">Hoàn Thiện Nội Thất</a></li>
+          <li><a href="#services" class="footer-link">Thiết Kế Kiến Trúc</a></li>
+          <li><a href="#services" class="footer-link">Thiết Kế Nội Thất</a></li>
+          <li><a href="#services" class="footer-link">Hồ Sơ Kỹ Thuật</a></li>
+          <li><a href="#quy-trinh" class="footer-link">Quy Trình Thiết Kế</a></li>
         </ul>
       </div>
 
-      <!-- Company -->
       <div>
-        <p class="font-condensed font-bold tracking-widest text-xs uppercase mb-4" style="color:#c9a227;">Công Ty</p>
+        <p class="font-condensed font-bold tracking-widest text-xs uppercase mb-4" style="color:#c9a227;">Tham Khảo</p>
         <ul class="flex flex-col gap-2">
-          <li><a href="#" class="footer-link">Về TK_HOUSE</a></li>
-          <li><a href="#" class="footer-link">Dự Án Tiêu Biểu</a></li>
-          <li><a href="#" class="footer-link">Đội Ngũ Thiết Kế</a></li>
-          <li><a href="cam-nang/index.html" class="footer-link">Tin Tức & Blog</a></li>
-          <li><a href="#" class="footer-link">Tuyển Dụng</a></li>
+          <li><a href="#projects" class="footer-link">Mẫu Thiết Kế</a></li>
+          <li><a href="cam-nang/index.html" class="footer-link">Cẩm Nang</a></li>
+          <li><a href="https://applamnha.vn/chu-nha.html?utm_source=tk-house&utm_medium=referral&utm_campaign=tkhouse_web&utm_content=footer_fee" data-aln="footer_fee" class="footer-link">Phí Thiết Kế</a></li>
+          <li><a href="https://applamnha.vn/du-toan-nha.html?utm_source=tk-house&utm_medium=referral&utm_campaign=tkhouse_web&utm_content=footer_dutoan" data-aln="footer_dutoan" class="footer-link">Dự Toán Chi Phí Xây</a></li>
         </ul>
       </div>
 
-      <!-- Contact -->
       <div>
         <p class="font-condensed font-bold tracking-widest text-xs uppercase mb-4" style="color:#c9a227;">Liên Hệ</p>
         <ul class="flex flex-col gap-3">
@@ -1109,650 +708,67 @@ updateSurveyUI();
 
     </div>
 
-    <!-- bottom bar -->
     <div class="border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-3" style="border-color:rgba(255,255,255,0.06);">
-      <p class="text-xs" style="color:#4a4540;">© 2025 TK_HOUSE. Bản quyền thuộc về Công ty Thiết Kế & Xây Dựng TK_HOUSE.</p>
-      <div class="flex gap-5">
-        <a href="#" class="footer-link text-xs">Chính Sách Bảo Mật</a>
-        <a href="#" class="footer-link text-xs">Điều Khoản Sử Dụng</a>
-      </div>
+      <p class="text-xs" style="color:#4a4540;">© 2026 TK.HOUSE – Thiết kế kiến trúc &amp; nội thất.</p>
     </div>
 
   </div>
 </footer>
 
+<!-- ════ FLOATING ════ -->
+<div class="float-col">
+  <a class="float-btn facebook" href="https://www.facebook.com/profile.php?id=61590112511418" target="_blank" rel="noopener" aria-label="Facebook TK.HOUSE">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+      <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+    </svg>
+  </a>
+  <a class="float-cta" href="https://applamnha.vn/bat-dau/?utm_source=tk-house&utm_medium=referral&utm_campaign=tkhouse_web&utm_content=float" data-aln="float">
+    Tư Vấn Thiết Kế
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</div>
+
 <!-- ════════════════════════════════ SCRIPTS ════════════════════════════════ -->
 <script>
-  // Navbar scroll effect
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 40) navbar.classList.add('scrolled');
     else navbar.classList.remove('scrolled');
   });
 
-  // Mobile menu toggle
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobile-menu');
-  hamburger.addEventListener('click', () => {
-    mobileMenu.classList.toggle('open');
-  });
-  // Close on link click
-  mobileMenu.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => mobileMenu.classList.remove('open'));
-  });
+  hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
 
-  // Scroll-reveal using IntersectionObserver
-  const reveals = document.querySelectorAll('.service-card, .project-wrap, .why-item, .stat-item');
+  const reveals = document.querySelectorAll('.service-card, .project-wrap, .why-item');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.opacity = '1';
-        e.target.style.transform = 'translateY(0)';
-      }
+      if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; }
     });
   }, { threshold: 0.12 });
-
   reveals.forEach((el, i) => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(28px)';
-    el.style.transition = `opacity 0.6s ease ${i * 0.1}s, transform 0.6s ease ${i * 0.1}s, border-color 0.3s, box-shadow 0.3s`;
+    el.style.transition = `opacity 0.6s ease ${(i % 4) * 0.1}s, transform 0.6s ease ${(i % 4) * 0.1}s, border-color 0.3s`;
     io.observe(el);
   });
 
-  // Smooth scroll for all anchors
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
+      const id = a.getAttribute('href');
+      if (id.length < 2) return;
+      const target = document.querySelector(id);
       if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
     });
   });
-</script>
 
-
-<!-- ════ FLOATING BUTTONS — RIGHT COLUMN ════ -->
-<style>
-.float-col {
-  position: fixed;
-  right: 20px;
-  bottom: 24px;
-  z-index: 999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-.float-btn {
-  width: 52px; height: 52px;
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  text-decoration: none;
-  transition: transform 0.2s, box-shadow 0.2s;
-  position: relative;
-  flex-shrink: 0;
-}
-.float-btn:hover { transform: scale(1.1); }
-
-/* CALL — red, special */
-.float-btn.call {
-  width: 58px; height: 58px;
-  background: linear-gradient(135deg, #e63946, #c1121f);
-  box-shadow: 0 4px 20px rgba(230,57,70,0.55);
-  border: 2px solid rgba(255,255,255,0.2);
-}
-.float-btn.call:hover { box-shadow: 0 6px 28px rgba(230,57,70,0.75); }
-.call-ring {
-  position: absolute; border-radius: 50%;
-  border: 2px solid rgba(230,57,70,0.5);
-  animation: call-ripple 2s ease-out infinite;
-  pointer-events: none;
-}
-.call-ring-1 { inset: -7px;  animation-delay: 0s; }
-.call-ring-2 { inset: -15px; border-color: rgba(230,57,70,0.3); animation-delay: 0.5s; }
-.call-ring-3 { inset: -23px; border-color: rgba(230,57,70,0.12); animation-delay: 1s; }
-@keyframes call-ripple {
-  0%   { transform: scale(0.9); opacity:1; }
-  100% { transform: scale(1.3); opacity:0; }
-}
-@keyframes phone-shake {
-  0%,100%       { transform: rotate(0); }
-  10%,30%       { transform: rotate(-18deg); }
-  20%,40%       { transform: rotate(18deg); }
-  50%           { transform: rotate(0); }
-}
-.call-icon { animation: phone-shake 3.5s ease-in-out infinite; }
-
-/* Call label */
-.call-tooltip {
-  position: absolute;
-  right: 66px; top: 50%; transform: translateY(-50%);
-  background: #e63946;
-  color: #fff;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
-  padding: 5px 12px; border-radius: 20px;
-  white-space: nowrap;
-  box-shadow: 0 2px 10px rgba(230,57,70,0.4);
-  pointer-events: none;
-  animation: tooltip-pulse 4s ease-in-out infinite;
-}
-.call-tooltip::after {
-  content:''; position:absolute;
-  left:100%; top:50%; transform:translateY(-50%);
-  border:5px solid transparent;
-  border-left-color:#e63946;
-}
-@keyframes tooltip-pulse {
-  0%,100%  { opacity:0; transform: translateY(-50%) translateX(-4px); }
-  15%,75%  { opacity:1; transform: translateY(-50%) translateX(0); }
-}
-
-/* ZALO — blue */
-.float-btn.zalo {
-  background: linear-gradient(135deg,#0068ff,#0052cc);
-  box-shadow: 0 4px 18px rgba(0,104,255,0.4);
-}
-.float-btn.zalo:hover { box-shadow: 0 6px 24px rgba(0,104,255,0.6); }
-.zalo-pulse {
-  position:absolute; inset:-5px; border-radius:50%;
-  border:2px solid rgba(0,104,255,0.45);
-  animation: zalo-pulse 2.2s ease-out infinite;
-  pointer-events:none;
-}
-@keyframes zalo-pulse {
-  0%   { transform:scale(1);   opacity:0.8; }
-  100% { transform:scale(1.5); opacity:0; }
-}
-
-/* FACEBOOK — blue */
-.float-btn.facebook {
-  background: linear-gradient(135deg,#1877f2,#0a5dc2);
-  box-shadow: 0 4px 18px rgba(24,119,242,0.4);
-}
-.float-btn.facebook:hover { box-shadow: 0 6px 24px rgba(24,119,242,0.6); }
-
-/* Mobile: smaller */
-@media (max-width: 767px) {
-  .float-col { right: 12px; bottom: 16px; gap: 8px; }
-  .float-btn { width: 46px; height: 46px; }
-  .float-btn.call { width: 52px; height: 52px; }
-  .call-tooltip { display: none; }
-}
-</style>
-
-<div class="float-col">
-
-  <!-- 3. FACEBOOK -->
-  <a class="float-btn facebook" href="https://www.facebook.com/profile.php?id=61590112511418" target="_blank" rel="noopener" aria-label="Facebook TK.HOUSE">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
-      <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
-    </svg>
-  </a>
-
-</div>
-
-
-<style>
-@keyframes zalo-pulse {
-  0%   { transform:scale(1);opacity:0.8; }
-  100% { transform:scale(1.5);opacity:0; }
-}
-@keyframes zalo-tooltip {
-  0%,100% { opacity:0; transform:translateY(4px); }
-  20%,80%  { opacity:1; transform:translateY(0); }
-}
-</style>
-
-<!-- ════ FORM SUBMIT JS ════ -->
-<script>
-function submitForm() {
-  const name  = document.getElementById('cf-name').value.trim();
-  const phone = document.getElementById('cf-phone').value.trim();
-  const email = document.getElementById('cf-email').value.trim();
-  const svc   = document.getElementById('cf-service').value;
-  const msg   = document.getElementById('cf-msg').value.trim();
-  const errEl = document.getElementById('form-error');
-
-  if (!name || !phone) {
-    errEl.style.display = 'block';
-    return;
-  }
-  errEl.style.display = 'none';
-
-  // Build mailto link as simple fallback (replace with Formspree/EmailJS for production)
-  const subject = encodeURIComponent('Yêu cầu tư vấn từ website – ' + name);
-  const body = encodeURIComponent(
-    'Họ tên: ' + name + '\n' +
-    'Điện thoại: ' + phone + '\n' +
-    'Email: ' + email + '\n' +
-    'Dịch vụ: ' + svc + '\n\n' +
-    'Yêu cầu:\n' + msg
-  );
-  window.location.href = 'mailto:arc.tkhouse@gmail.com?subject=' + subject + '&body=' + body;
-
-  // Show success message
-  document.getElementById('form-body').style.display = 'none';
-  document.getElementById('form-success').style.display = 'block';
-
-  // GA4 event
-  if (typeof gtag !== 'undefined') {
-    gtag('event', 'generate_lead', { event_category: 'contact_form', event_label: svc });
-  }
-}
-</script>
-
-<!-- ════════════════════════════════ AI CHATBOT ════════════════════════════════ -->
-<style>
-#chatbot-btn {
-  position: fixed; bottom: 28px; left: 28px; z-index: 999;
-  width: 56px; height: 56px; border-radius: 50%;
-  background: linear-gradient(135deg, #c9a227, #f5d98b);
-  display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 4px 20px rgba(201,162,39,0.5);
-  cursor: pointer; border: none;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-#chatbot-btn:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(201,162,39,0.7); }
-#chatbot-btn .badge {
-  position: absolute; top: -4px; right: -4px;
-  width: 18px; height: 18px; border-radius: 50%;
-  background: #e24b4a; color: #fff;
-  font-size: 10px; font-weight: 700;
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'Barlow', sans-serif;
-}
-@keyframes chat-pulse {
-  0% { transform: scale(1); opacity: 0.7; }
-  100% { transform: scale(1.5); opacity: 0; }
-}
-#chatbot-btn::after {
-  content: ''; position: absolute; inset: -4px; border-radius: 50%;
-  border: 2px solid rgba(201,162,39,0.5);
-  animation: chat-pulse 2s ease-out infinite;
-}
-#chatbot-window {
-  position: fixed; bottom: 96px; left: 28px; z-index: 998;
-  width: 360px; max-height: 520px;
-  background: #1a1a1a; border: 1px solid rgba(201,162,39,0.3);
-  border-radius: 12px; display: none; flex-direction: column;
-  box-shadow: 0 8px 40px rgba(0,0,0,0.6);
-  overflow: hidden; font-family: 'Barlow', sans-serif;
-  transition: opacity 0.3s, transform 0.3s;
-}
-#chatbot-window.open { display: flex; }
-@media (max-width: 767px) {
-  #chatbot-window {
-    left: 8px; right: 8px; width: auto;
-    bottom: 80px; max-height: 70vh;
-  }
-}
-#chat-header {
-  background: linear-gradient(135deg, #c9a227, #a07d12);
-  padding: 14px 16px; display: flex; align-items: center; gap: 10px;
-}
-#chat-header .avatar {
-  width: 36px; height: 36px; border-radius: 50%;
-  background: rgba(255,255,255,0.2);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 18px; flex-shrink: 0;
-}
-#chat-header .info p { margin: 0; }
-#chat-header .info .name { font-weight: 700; font-size: 14px; color: #0f0f0f; }
-#chat-header .info .status { font-size: 11px; color: rgba(0,0,0,0.6); }
-#chat-header .close-btn {
-  margin-left: auto; background: none; border: none; cursor: pointer;
-  color: rgba(0,0,0,0.6); font-size: 20px; line-height: 1; padding: 0;
-}
-#chat-messages {
-  flex: 1; overflow-y: auto; padding: 16px; display: flex;
-  flex-direction: column; gap: 10px; max-height: 340px;
-}
-#chat-messages::-webkit-scrollbar { width: 4px; }
-#chat-messages::-webkit-scrollbar-track { background: transparent; }
-#chat-messages::-webkit-scrollbar-thumb { background: rgba(201,162,39,0.3); border-radius: 2px; }
-.chat-msg { display: flex; gap: 8px; align-items: flex-end; }
-.chat-msg.user { flex-direction: row-reverse; }
-.chat-msg .bubble {
-  max-width: 80%; padding: 10px 14px; border-radius: 16px;
-  font-size: 13px; line-height: 1.5;
-}
-.chat-msg.bot .bubble {
-  background: #2a2a2a; color: #e0d8c8; border-bottom-left-radius: 4px;
-}
-.chat-msg.user .bubble {
-  background: linear-gradient(135deg, #c9a227, #a07d12);
-  color: #0f0f0f; font-weight: 500; border-bottom-right-radius: 4px;
-}
-.chat-msg .avatar-sm {
-  width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
-  background: linear-gradient(135deg,#c9a227,#f5d98b);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 13px;
-}
-.typing-dots { display: flex; gap: 4px; padding: 4px 0; }
-.typing-dots span {
-  width: 7px; height: 7px; border-radius: 50%;
-  background: rgba(201,162,39,0.6);
-  animation: bounce 1.2s ease-in-out infinite;
-}
-.typing-dots span:nth-child(2) { animation-delay: 0.2s; }
-.typing-dots span:nth-child(3) { animation-delay: 0.4s; }
-@keyframes bounce {
-  0%,60%,100% { transform: translateY(0); }
-  30% { transform: translateY(-6px); }
-}
-#chat-quick-btns {
-  padding: 0 16px 10px; display: flex; flex-wrap: wrap; gap: 6px;
-}
-.quick-btn {
-  padding: 5px 12px; border-radius: 20px; font-size: 11px;
-  border: 1px solid rgba(201,162,39,0.4); color: #c9a227;
-  background: transparent; cursor: pointer; font-family: 'Barlow', sans-serif;
-  transition: background 0.2s, color 0.2s;
-}
-.quick-btn:hover { background: rgba(201,162,39,0.15); }
-#chat-input-row {
-  padding: 10px 12px; border-top: 1px solid rgba(201,162,39,0.15);
-  display: flex; gap: 8px; align-items: center;
-}
-#chat-input {
-  flex: 1; background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(201,162,39,0.2); border-radius: 20px;
-  padding: 8px 14px; color: #e0d8c8; font-size: 13px;
-  font-family: 'Barlow', sans-serif; outline: none;
-}
-#chat-input:focus { border-color: rgba(201,162,39,0.5); }
-#chat-send {
-  width: 34px; height: 34px; border-radius: 50%; flex-shrink: 0;
-  background: linear-gradient(135deg, #c9a227, #f5d98b);
-  border: none; cursor: pointer; display: flex; align-items: center; justify-content: center;
-  transition: opacity 0.2s;
-}
-#chat-send:hover { opacity: 0.85; }
-@media (max-width: 480px) {
-  #chatbot-window { width: calc(100vw - 32px); left: 16px; }
-}
-</style>
-
-<!-- Chatbot Toggle Button -->
-<button id="chatbot-btn" aria-label="Chat với AI TK.HOUSE" onclick="toggleChat()">
-  <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
-    <path d="M4 5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2H8l-4 4V5z" fill="#0f0f0f"/>
-    <circle cx="9" cy="10" r="1.2" fill="#c9a227"/>
-    <circle cx="13" cy="10" r="1.2" fill="#c9a227"/>
-    <circle cx="17" cy="10" r="1.2" fill="#c9a227"/>
-  </svg>
-  <span class="badge" id="chat-badge">1</span>
-</button>
-
-<!-- Chatbot Window -->
-<div id="chatbot-window">
-  <!-- Header -->
-  <div id="chat-header">
-    <div class="avatar">🏠</div>
-    <div class="info">
-      <p class="name">TK.HOUSE AI Assistant</p>
-      <p class="status">● Trực tuyến 24/7</p>
-    </div>
-    <button class="close-btn" onclick="toggleChat()">×</button>
-  </div>
-
-  <!-- Messages -->
-  <div id="chat-messages"></div>
-
-  <!-- Quick reply buttons -->
-  <div id="chat-quick-btns">
-    <button class="quick-btn" onclick="sendQuick('Báo giá xây nhà')">💰 Báo giá</button>
-    <button class="quick-btn" onclick="sendQuick('Thiết kế nội thất')">🛋️ Nội thất</button>
-    <button class="quick-btn" onclick="sendQuick('Thời gian thi công')">⏱️ Tiến độ</button>
-    <button class="quick-btn" onclick="sendQuick('Liên hệ tư vấn')">📞 Liên hệ</button>
-  </div>
-
-  <!-- Input -->
-  <div id="chat-input-row">
-    <input id="chat-input" type="text" placeholder="Nhập câu hỏi của bạn..." 
-           onkeydown="if(event.key==='Enter') sendMessage()" />
-    <button id="chat-send" onclick="sendMessage()">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M2 8h12M9 4l5 4-5 4" stroke="#0f0f0f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </button>
-  </div>
-</div>
-
-<script>
-// ── Chatbot State ──
-const chatState = { open: false, messages: [], leadCollected: false, step: null };
-
-const SYSTEM_PROMPT = `Bạn là trợ lý AI của công ty TK.HOUSE - Thiết Kế & Xây Dựng tại TP.HCM.
-
-THÔNG TIN CÔNG TY:
-- Tên: TK.HOUSE (Xây tổ ấm cho gia đình bạn)
-- Email: arc.tkhouse@gmail.com
-- Địa chỉ: 169 Trần Văn Đang, P.11, Q.3, TP.HCM
-- Chi nhánh: Ngải Giao, TP.HCM
-- Kinh nghiệm: 15+ năm, 500+ công trình
-- Fanpage: facebook.com/profile.php?id=61590112511418
-
-DỊCH VỤ:
-1. Thiết kế nội thất - thiết kế không gian sống, văn phòng, thương mại
-2. Thiết kế kiến trúc - nhà ở, biệt thự, tòa nhà thương mại
-3. Thi công xây dựng - tổng thầu trọn gói hoặc từng hạng mục
-
-BẢNG GIÁ THAM KHẢO:
-- Gói Tiết Kiệm: 3-5 triệu/m² (thi công thô hoàn thiện)
-- Gói Tiêu Chuẩn: 5-8 triệu/m² (thiết kế + thi công trọn gói)
-- Gói Premium: 8-15 triệu/m² (luxury full-option)
-
-QUY TẮC TRẢ LỜI:
-- Trả lời bằng tiếng Việt, thân thiện, ngắn gọn (tối đa 3-4 câu)
-- Sau 2-3 tin nhắn tư vấn, hỏi khách tên và SĐT để tư vấn chi tiết hơn
-- Luôn khuyến khích khách để lại tên và SĐT (hoặc email arc.tkhouse@gmail.com)
-- Không bịa thông tin ngoài những gì đã cung cấp`;
-
-// ── Init ──
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    addBotMessage('Xin chào! 👋 Tôi là trợ lý AI của TK.HOUSE. Bạn đang cần tư vấn về dịch vụ gì ạ?');
-    // Auto-open on desktop only
-    if (window.innerWidth >= 768) {
-      chatState.open = true;
-      document.getElementById('chatbot-window').classList.add('open');
-      document.getElementById('chat-badge').style.display = 'none';
-    }
-  }, 1800);
-});
-
-function toggleChat() {
-  chatState.open = !chatState.open;
-  document.getElementById('chatbot-window').classList.toggle('open', chatState.open);
-  document.getElementById('chat-badge').style.display = 'none';
-  if (chatState.open) document.getElementById('chat-input').focus();
-  if (typeof gtag !== 'undefined') gtag('event', 'chatbot_open');
-}
-
-function addBotMessage(text) {
-  const msgs = document.getElementById('chat-messages');
-  const div = document.createElement('div');
-  div.className = 'chat-msg bot';
-  div.innerHTML = `<div class="avatar-sm">🏠</div><div class="bubble">${text}</div>`;
-  msgs.appendChild(div);
-  msgs.scrollTop = msgs.scrollHeight;
-  chatState.messages.push({ role: 'assistant', content: text });
-}
-
-function addUserMessage(text) {
-  const msgs = document.getElementById('chat-messages');
-  const div = document.createElement('div');
-  div.className = 'chat-msg user';
-  div.innerHTML = `<div class="bubble">${text}</div>`;
-  msgs.appendChild(div);
-  msgs.scrollTop = msgs.scrollHeight;
-}
-
-function showTyping() {
-  const msgs = document.getElementById('chat-messages');
-  const div = document.createElement('div');
-  div.className = 'chat-msg bot'; div.id = 'typing-indicator';
-  div.innerHTML = `<div class="avatar-sm">🏠</div><div class="bubble"><div class="typing-dots"><span></span><span></span><span></span></div></div>`;
-  msgs.appendChild(div);
-  msgs.scrollTop = msgs.scrollHeight;
-}
-
-function removeTyping() {
-  const el = document.getElementById('typing-indicator');
-  if (el) el.remove();
-}
-
-function sendQuick(text) {
-  document.getElementById('chat-input').value = text;
-  sendMessage();
-}
-
-async function sendMessage() {
-  const input = document.getElementById('chat-input');
-  const text = input.value.trim();
-  if (!text) return;
-  input.value = '';
-
-  addUserMessage(text);
-  chatState.messages.push({ role: 'user', content: text });
-
-  // Check if collecting lead info
-  if (chatState.step === 'ask_name') {
-    chatState.leadName = text;
-    chatState.step = 'ask_phone';
-    setTimeout(() => addBotMessage(`Cảm ơn ${text}! 😊 Bạn cho mình xin số điện thoại để KTS TK.HOUSE liên hệ tư vấn miễn phí nhé?`), 600);
-    return;
-  }
-  if (chatState.step === 'ask_phone') {
-    chatState.leadPhone = text;
-    chatState.step = null;
-    chatState.leadCollected = true;
-    setTimeout(() => addBotMessage(`Tuyệt vời! 🎉 Mình đã ghi nhận thông tin của **${chatState.leadName}** - SĐT: **${text}**. KTS TK.HOUSE sẽ gọi lại trong vòng 2 giờ trong giờ hành chính. Nếu cần gấp, bạn email arc.tkhouse@gmail.com nhé!`), 600);
-    if (typeof gtag !== 'undefined') gtag('event', 'chatbot_lead', { name: chatState.leadName, phone: text });
-    return;
-  }
-
-  showTyping();
-
-  setTimeout(() => {
-    removeTyping();
-    addBotMessage(cannegReply(text));
-
-    // After 3 exchanges, offer to collect lead
-    const userMsgs = chatState.messages.filter(m => m.role === 'user').length;
-    if (userMsgs >= 3 && !chatState.leadCollected && chatState.step === null) {
-      chatState.step = 'ask_name';
-      setTimeout(() => addBotMessage('Để KTS của TK.HOUSE tư vấn chi tiết hơn cho bạn, bạn cho mình biết tên của bạn nhé? 😊'), 1200);
-    }
-  }, 700);
-}
-
-// Trả lời dựng sẵn theo từ khoá — KHÔNG gọi API AI trực tiếp từ trình duyệt.
-// Lý do: gọi thẳng api.anthropic.com từ client bắt buộc lộ API key trong HTML
-// (ai xem source cũng lấy được, dùng free quota của công ty). Nếu sau này cần
-// AI trả lời tự do, phải qua một backend proxy (Cloud Function/server riêng)
-// giữ key phía server, tuyệt đối không gắn key vào file này.
-function canegReply(text) {
-  const t = text.toLowerCase();
-  if (t.includes('giá') || t.includes('báo giá') || t.includes('tiền') || t.includes('phí')) {
-    return 'Dạ, TK.HOUSE có 3 gói tham khảo: Tiết Kiệm 3-5tr/m², Tiêu Chuẩn 5-8tr/m², Premium 8-15tr/m². Để báo giá chính xác cần khảo sát diện tích & yêu cầu cụ thể — bạn để lại SĐT để KTS tư vấn chi tiết nhé?';
-  }
-  if (t.includes('nội thất')) {
-    return 'TK.HOUSE nhận thiết kế nội thất nhà ở, văn phòng, không gian thương mại trọn gói. Bạn cho mình biết diện tích & phong cách yêu thích để tư vấn kỹ hơn nhé?';
-  }
-  if (t.includes('tiến độ') || t.includes('thời gian') || t.includes('bao lâu')) {
-    return 'Thời gian thi công tuỳ quy mô công trình, thường 60-120 ngày với nhà phố. KTS sẽ báo tiến độ cụ thể sau khảo sát thực tế.';
-  }
-  if (t.includes('liên hệ') || t.includes('tư vấn') || t.includes('gọi')) {
-    return 'Bạn để lại tên + SĐT ở đây, KTS TK.HOUSE sẽ liên hệ lại trong giờ hành chính nhé!';
-  }
-  return 'Cảm ơn bạn đã nhắn tin! Để tư vấn chính xác nhất, bạn để lại tên + SĐT ở đây, KTS TK.HOUSE sẽ liên hệ lại sớm nhé.';
-}
-</script>
-
-
-<!-- ════ SURVEY POPUP (auto after 6s) ════ -->
-<div id="survey-popup" style="display:none;position:fixed;inset:0;z-index:1100;background:rgba(0,0,0,0.75);backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:16px;">
-  <div style="background:#1a1a1a;border:1px solid rgba(201,162,39,0.4);border-radius:12px;max-width:460px;width:100%;padding:32px;position:relative;animation:fadeUp 0.4s ease;">
-    <button onclick="closePopup()" style="position:absolute;top:12px;right:16px;background:none;border:none;color:#7a7065;font-size:22px;cursor:pointer;line-height:1;">×</button>
-    <div style="font-size:2.5rem;text-align:center;margin-bottom:12px;">🏠</div>
-    <h3 class="font-display text-2xl text-white text-center mb-3">Bạn Đang Có Dự Định Xây Nhà?</h3>
-    <p class="text-sm text-center mb-6" style="color:#a09080;">Làm khảo sát <strong style="color:#e8c04a;">2 phút</strong> — TK.HOUSE gửi <strong style="color:#e8c04a;">báo giá sơ bộ miễn phí</strong> trong 1 giờ!</p>
-    <div style="background:rgba(201,162,39,0.08);border:1px solid rgba(201,162,39,0.2);border-radius:8px;padding:14px 16px;margin-bottom:20px;">
-      <div class="flex flex-col gap-2">
-        <div class="flex items-center gap-2 text-sm" style="color:#c9c0b0;"><span style="color:#c9a227;">✓</span> Diện tích & số tầng phù hợp</div>
-        <div class="flex items-center gap-2 text-sm" style="color:#c9c0b0;"><span style="color:#c9a227;">✓</span> Gói thiết kế phù hợp ngân sách</div>
-        <div class="flex items-center gap-2 text-sm" style="color:#c9c0b0;"><span style="color:#c9a227;">✓</span> KTS tư vấn riêng cho bạn</div>
-      </div>
-    </div>
-    <a href="#khao-sat" onclick="closePopup()" class="btn-gold w-full justify-center text-center" style="font-size:0.9rem;display:flex;">
-      📋 Bắt Đầu Khảo Sát Ngay
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a>
-    <button onclick="closePopup()" class="w-full text-center text-xs mt-3" style="background:none;border:none;color:#5a5048;cursor:pointer;">Để sau, tôi muốn xem thêm</button>
-  </div>
-</div>
-
-<!-- ════ FLOATING SURVEY CTA ════ -->
-<div id="survey-float" style="position:fixed;bottom:100px;left:50%;transform:translateX(-50%);z-index:990;display:none;">
-  <a href="#khao-sat" onclick="hideSurveyFloat()" 
-     style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#c9a227,#f5d98b);color:#0f0f0f;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;padding:12px 24px;border-radius:30px;text-decoration:none;box-shadow:0 4px 24px rgba(201,162,39,0.5);animation:float-bounce 2s ease-in-out infinite;">
-    📋 Khảo Sát Nhận Báo Giá Miễn Phí
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </a>
-</div>
-
-<style>
-@keyframes float-bounce {
-  0%,100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(-6px); }
-}
-#survey-popup { display: none; }
-#survey-popup.show { display: flex; }
-</style>
-
-<script>
-// ── Auto popup after 6s (once per session) ──
-if (!sessionStorage.getItem('popup_shown')) {
-  setTimeout(() => {
-    document.getElementById('survey-popup').classList.add('show');
-    sessionStorage.setItem('popup_shown', '1');
-    if (typeof gtag !== 'undefined') gtag('event', 'survey_popup_shown');
-  }, 6000);
-}
-
-function closePopup() {
-  document.getElementById('survey-popup').classList.remove('show');
-  if (typeof gtag !== 'undefined') gtag('event', 'survey_popup_closed');
-}
-
-// ── Floating CTA: show after scrolling past hero ──
-window.addEventListener('scroll', () => {
-  const float = document.getElementById('survey-float');
-  const surveySection = document.getElementById('khao-sat');
-  if (!surveySection) return;
-  const surveyTop = surveySection.getBoundingClientRect().top;
-  if (window.scrollY > 500 && surveyTop > 0) {
-    float.style.display = 'block';
-  } else {
-    float.style.display = 'none';
-  }
-});
-
-function hideSurveyFloat() {
-  document.getElementById('survey-float').style.display = 'none';
-}
-
-// ── Toggle quick contact form ──
-let quickFormOpen = true;
-function toggleQuickForm() {
-  quickFormOpen = !quickFormOpen;
-  const content = document.getElementById('quick-form-content');
-  const arrow = document.getElementById('quick-form-arrow');
-  content.style.display = quickFormOpen ? 'block' : 'none';
-  arrow.style.transform = quickFormOpen ? 'rotate(0deg)' : 'rotate(-90deg)';
-}
+  // GA4: đếm lượt bấm sang App Làm Nhà theo vị trí nút
+  document.querySelectorAll('a[data-aln]').forEach(a => {
+    a.addEventListener('click', () => {
+      if (typeof gtag !== 'undefined') gtag('event', 'aln_click', { slot: a.dataset.aln, transport_type: 'beacon' });
+    });
+  });
 </script>
 
 </body>
